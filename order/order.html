@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeLat - Order Now!</title>
+    <!-- <link rel="stylesheet" href="../main.css"> -->
+    <link rel="stylesheet" href="./order.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="form-Kirim">
+
+        <!-- <form action="lalala" method="POST"> -->
+        <!-- <form> -->
+        <h1>Bikin Paket</h1>
+
+        <hr>
+
+        <h3>Pengirim</h3>        
+
+        <section class="pengirim">
+            <label for="nama-Pengirim">Nama : </label>
+            <input type="text" id="nama-Pengirim" required minlength="4">
+        </section>
+
+        <section class="pengirim">
+          <label for="alamat-Pengirim">Alamat : </label>
+          <textarea id="alamat-Pengirim" rows="2" cols="30"></textarea>
+        </section>
+
+        <label for="cars">Kota:</label>
+        <select name="cars" id="asal">
+            <option value="Banda Aceh">Banda Aceh</option>
+            <option value="Medan">Medan</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Bandar Lampung">Bandar Lampung</option>
+            <option value="Serang">Serang</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Depok">Depok</option>
+            <option value="Bekasi">Bekasi</option>
+            <option value="Tangerang">Tangerang</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Tasikmalaya">Tasikmalaya</option>
+        </select>
+
+        <section class="pengirim">
+            <label for="noHP-Pengirim">No HP : </label>
+            <input type="text" id="noHP-Pengirim" required minlength="3">
+        </section>    
+
+        <hr>
+
+        <h3>Penerima</h3>   
+        
+        <section class="penerima">
+            <label for="nama-penerima">Nama : </label>
+            <input type="text" id="nama-penerima">
+        </section>
+        <section class="penerima">
+          <label for="alamat-penerima">Alamat : </label>
+          <textarea id="alamat-penerima" rows="2" cols="30"></textarea>
+        </section>
+
+        <label for="cars">Kota:</label>
+        <select name="cars" id="tujuan">
+            <option value="Banda Aceh">Banda Aceh</option>
+            <option value="Medan">Medan</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Bandar Lampung">Bandar Lampung</option>
+            <option value="Serang">Serang</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Depok">Depok</option>
+            <option value="Bekasi">Bekasi</option>
+            <option value="Tangerang">Tangerang</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Tasikmalaya">Tasikmalaya</option>
+        </select>
+
+        <section class="penerima">
+            <label for="noHP-penerima">No HP : </label>
+            <input type="text" id="noHP-penerima">
+        </section>   
+
+        <hr>
+
+        <h3>Pilihan Pengiriman</h3>   
+
+               
+        <section class="tipe-Paket">
+            <input type="radio" name="typePaket" id="tipe-ekonomi" value="ekonomi">
+            <label for="tipe-ekonomi">Ekonomi</label>
+            <input type="radio" name="typePaket" id="tipe-ekspress" value="ekspress">
+            <label for="tipe-ekspress">Ekspress</label>
+        </section>
+
+        <section class="berat-Paket">
+            <label for="berat">Berat : </label>
+            <input type="number" id="berat" required min="1">
+             <label for="berat">Kg</label>
+        </section>        
+
+        <hr>
+        <section class="submission">
+            <button  onclick="paketBaru()">KIRIM</button>
+        </section>
+        <section class="submission">
+            <button onclick="tambahPaket()">DAPAT ORDER</button>
+        </section>
+
+        <!-- </form> -->
+
+    </section>
+
+    <h1 id='header-Table'>Data Pengiriman</h1>    
+     <section id='tabel'>
+
+        <table cellspacing='0'>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>ID</th>
+                <th>Nama Pengirim</th>
+                <th>No Hp Pengirim</th>
+                <th>Alamat Pengirim</th>
+                <th>Kota Asal</th>
+                <th>Nama Penerima</th>
+                <th>No Hp Pengirim</th>
+                <th>Alamat Penerima</th>
+                <th>Kota Tujuan</th>
+                <th>Biaya</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id='tabelBody'>
+            <!-- <tr>
+                <td>1</td>
+                <td>123budi</td>
+                <td>Budi</td>
+                <td>081222221122</td>
+                <td>Jl. Sudirman no 10, kel. depok, kec. depok</td>
+                <td>Jakarta</td>
+                <td>Asep</td>
+                <td>08122333223</td>
+                <td>Jl. imam bonjol no 20, kel. bandung, kec. bandung selatan</td>
+                <td>Bandung</td>
+                <td>Sedang Dalam Pengiriman</td>
+                <td><button>Update</button><button>Delete</button></td>
+              </tr> -->
+        </tbody>
+        </table>
+    </section>
+
+    <script src="./order.js"></script>
+
+</body>
+</html>
