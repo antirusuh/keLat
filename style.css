@@ -61,8 +61,8 @@ header ul li a:hover {
 .banner2 {
     display: flex;
     flex-direction: column; 
-    height: 100vh;
-    background-image: url("jabat-tangan-cover.jpg");
+    /* height: 200vh;  */
+    background-image: linear-gradient(#C5D0DD, #2B394A);
     background-size: cover;
 }
 
