@@ -365,6 +365,7 @@ function tambahPaket() {
 }
 
 function updateBerhasil(event) {
+    // event.preventDefault(); // => buat mencegah refresh
     // console.log(event.target.getAttribute('id_berhasil'));
     const index = Number(event.target.getAttribute('id_berhasil'))
 
